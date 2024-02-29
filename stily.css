@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0 0;
+}
+
+input {
+    width: 150px;
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+#rock {
+    background-color: #a400ff;
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissors {
+    background-color: #78f7fc;
+}
+
+.container-human {
+    display: flex;
+    padding: 5px;
+}
+
+.container-human p {
+    margin: 0 10px;
+}
+
+.container-machine{
+    display: flex;
+}
+
+.container-machine p {
+    margin: 0 5px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.your-score span {
+    color: rgb(77, 128, 216);
+}
+
+.machine-score span {
+    color: rgb(224, 71, 15);
+}
+
+.arena {
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 30px;
+}

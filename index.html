@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stily.css">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>JokenPô</h1>
+
+        <input type="text" placeholder="Nome do Jogador" id="play-name">
+        <input type="text" placeholder=" Nº de Partidas" id="num-partidas">
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock'), humanAction('rock'), namePlay()">&#x1F44A;</button>
+            <button id="paper" onclick="playHuman('paper'), humanAction('paper'), namePlay()">&#x1f590;</button>
+            <button id="scissors" onclick="playHuman('scissors'), humanAction('scissors'), namePlay()">&#x270C;</button>
+        </div>
+
+        <p class="results">Resultado</p>
+        <p></p>
+
+        <p class="your-score">Sua Pontuação: <span id="human-score">0</span></p>
+        <p class="machine-score">Pontuação da Alexa: <span id="machine-score">0</span></p>
+
+    </div>
+
+    <div class="arena">
+        <div class="container-human">
+            <p id="human-play">Jogador</p>
+            <p><span id="human-arena"></span></p>
+        </div>
+
+        <div class="container-machine">
+            <p id="machine-play">Maquina</p>
+            <p><span id="machine-arena"></span></p>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
