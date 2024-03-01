@@ -16,7 +16,6 @@ const playHuman = (humanChoice) => {
 const playMachine = () => {
     const choices = ['rock', 'paper', 'scissors']
     const randomNumber = Math.floor(Math.random() * 3)
-
     const machineArena = document.querySelector('#machine-arena')
 
     console.log('maquina -' + choices[randomNumber])
@@ -57,8 +56,7 @@ const playTheGame = (human, machine,) => {
         machineScore.innerHTML = machineScoreNumber
         result.innerHTML = "Você perdeu para a Alexa!"
     }
-
-    
+  
 
 }
 
